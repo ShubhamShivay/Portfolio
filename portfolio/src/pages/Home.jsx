@@ -6,12 +6,12 @@ function Home() {
 	return (
 		<>
 			<div className="home  px-20 w-full h-[80vh] flex md:flex-row md:justify-between flex-col justify-center items-center">
-				<div className="left sm:order-2 md:order-1 flex flex-col md:items-start sm:items-center ">
-					<h1 className="text-5xl font-bold text-red-600 mb-4 ">
+				<div className="left sm:order-2 md:order-1 flex flex-col md:items-start sm:items-center sm:justify-center mb-6 ">
+					<h1 className="md:text-5xl sm: text-2xl font-bold text-red-600 mb-4 ">
 						Hi there, I'm Shubham
 					</h1>
 					<a
-						className=" bg-transparent px-3 py-1 text-yellow-400 border-2 border-yellow-400"
+						className=" bg-transparent px-3 py-1 w-fit text-yellow-400 border-2 border-yellow-400"
 						download="Shubham_Resume.pdf"
 						href={Resume}
 					>
