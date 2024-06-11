@@ -22,7 +22,7 @@ function Footer() {
 					<p>Copyright © 2024 - All right reserved</p>
 				</aside>
 				<nav className="grid-flow-col gap-4 md:place-self-center md:justify-self-end">
-					<Link to="https://x.com/SilentWatcherG">
+					<Link to="https://x.com/SilentWatcherG" target="_blank">
 						<a>
 							<svg
 								xmlns="http://www.w3.org/2000/svg"
@@ -48,7 +48,10 @@ function Footer() {
 							</svg>
 						</a>
 					</Link>
-					<Link to="https://www.facebook.com/profile.php?id=100012244770658">
+					<Link
+						to="https://www.facebook.com/profile.php?id=100012244770658"
+						target="_blank"
+					>
 						<a>
 							<svg
 								xmlns="http://www.w3.org/2000/svg"
@@ -62,13 +65,16 @@ function Footer() {
 						</a>
 					</Link>
 
-					<Link to="https://www.instagram.com/silent_watcher_unexplained/">
+					<Link
+						to="https://www.instagram.com/silent_watcher_unexplained/"
+						target="_blank"
+					>
 						<a>
 							<FaInstagram className="w-6 h-6" />
 						</a>
 					</Link>
 
-					<Link to="https://github.com/ShubhamShivay">
+					<Link to="https://github.com/ShubhamShivay" target="_blank">
 						<a>
 							<FaGithub className="w-6 h-6" />
 						</a>
