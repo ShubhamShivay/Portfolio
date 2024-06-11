@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function Navbar() {
 	const navItems = ["Home", "Skills", "Projects", "Contact"];
@@ -28,8 +29,13 @@ function Navbar() {
 							className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
 						>
 							{navItems.map((item) => (
-								<li key={item}>
-									<a>{item}</a>
+								<li
+									className=" hover:border-b-2 hover:border-yellow-400"
+									key={item}
+								>
+									<Link to={item === "Home" ? "/" : "/" + item.toLowerCase()}>
+										{item}
+									</Link>
 								</li>
 							))}
 						</ul>
@@ -39,8 +45,13 @@ function Navbar() {
 				<div className="navbar-center hidden lg:flex">
 					<ul className="menu menu-horizontal px-1">
 						{navItems.map((item) => (
-							<li key={item}>
-								<a>{item}</a>
+							<li
+								className=" hover:border-b-2 hover:border-yellow-400"
+								key={item}
+							>
+								<Link to={item === "Home" ? "/" : "/" + item.toLowerCase()}>
+									{item}
+								</Link>
 							</li>
 						))}
 					</ul>
